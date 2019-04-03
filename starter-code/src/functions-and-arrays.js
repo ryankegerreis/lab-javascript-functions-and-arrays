@@ -23,9 +23,28 @@ var words = [
   'crackpot'
 ];
 
+function findLongestWord(words) {
+  let longestWord=words[0];
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length > longestWord.length) {
+      longestWord = words[i];
+      break;
+    }
+  }
+  console.log("cool",);
+  return longestWord;
+  
+}
+
+console.log(findLongestWord(words));
+
+
 // Calculating a Sum
 
 var numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
+
+
+
 
 // Calculate the Average
 
