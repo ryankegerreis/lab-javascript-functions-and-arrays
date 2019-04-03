@@ -1,4 +1,16 @@
 // Find the maximum
+function maxOfTwoNumbers(num1, num2) {
+  if (num1>num2){
+  return(num1)
+} else if(num1==num2) {
+  return num1
+}
+  else{
+    return num2
+  }
+}
+maxOfTwoNumbers(2,4);
+
 
 // Finding Longest Word
 var words = [
