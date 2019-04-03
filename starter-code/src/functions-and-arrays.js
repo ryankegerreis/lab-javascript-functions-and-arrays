@@ -43,12 +43,32 @@ console.log(findLongestWord(words));
 
 var numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-
+function sumArray(array) {
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    sum += array[i]
+  }
+console.log(sum);
+return sum
+}
 
 
 // Calculate the Average
 
 var numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
+
+function averageNumbers(arrayAvg) {
+  let sum2 = 0;
+  for (let i = 0; i < arrayAvg.length; i++) {
+    sum2 += arrayAvg[i];
+    
+  }
+  sum2 /= arrayAvg.length;
+  console.log(sum2);
+  return sum2
+}
+
+averageNumbers(numbersAvg);
 
 // Array of Strings
 var wordsArr = [
@@ -64,6 +84,22 @@ var wordsArr = [
   'palace'
 ];
 
+function averageWordLength(wordAvg) {
+  let sum3 = 0;
+  // if(averageWordsLength.length === 0) return undefined;
+  //Is invalidating the rest of the tests
+  for (let i = 0; i < wordAvg.length; i++) {
+    sum3 += wordAvg[i].length;
+    
+  }
+
+  sum3 /= wordAvg.length;
+  console.log(sum3);
+  return sum3
+}
+
+averageWordLength(wordsArr);
+
 // Unique Arrays
 var wordsUnique = [
   'crab',
@@ -78,6 +114,9 @@ var wordsUnique = [
   'simple',
   'bring'
 ];
+
+
+
 
 // Finding Elements
 var wordsFind = [
